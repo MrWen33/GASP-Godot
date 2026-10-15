@@ -5,6 +5,10 @@
 > **本仓库不含任何 Epic 内容。** 动画、网格、贴图、声音、关卡等都要由你本机的 GASP 工程导出生成（见下），生成物（`godot/assets/`、`godot/data/`、`tools/ue/out/`）已被 `.gitignore` 忽略，请勿提交或再分发。GASP 内容受 Epic 的许可条款约束。
 > 范围：只做 Motion Matching 与动作动画，MetaHuman 不在范围内。
 
+## 演示视频
+
+[▶ 在 Bilibili 观看演示：BV17Ypz6YEKd](https://www.bilibili.com/video/BV17Ypz6YEKd)
+
 ## 验证过的版本（请严格对齐）
 
 | 组件 | 版本 | 说明 |
