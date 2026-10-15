@@ -24,7 +24,7 @@
 在**普通终端**（PowerShell / Windows Terminal / cmd，不是 Claude Code 的 `!` 命令）里：
 
 ```
-git clone <本仓库> gasp-godot
+git clone https://github.com/MrWen33/GASP-Godot.git gasp-godot
 cd gasp-godot
 python tools/setup.py
 ```
