@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://brlcffucra2x8"]
+
+[ext_resource type="Script" uid="uid://b5dptyogwuxgk" path="res://scripts/sandbox_character.gd" id="1"]
+[ext_resource type="Script" uid="uid://dxgkc7ab5sjkk" path="res://scripts/follow_camera.gd" id="2"]
+[ext_resource type="Script" uid="uid://cpolm44o3vbh6" path="res://scripts/main.gd" id="3"]
+[ext_resource type="Script" uid="uid://dhcyghgkcucpi" path="res://scripts/level_builder.gd" id="4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="sky_mat"]
+sky_top_color = Color(0.38, 0.55, 0.8, 1)
+sky_horizon_color = Color(0.7, 0.75, 0.82, 1)
+ground_bottom_color = Color(0.25, 0.25, 0.27, 1)
+ground_horizon_color = Color(0.7, 0.75, 0.82, 1)
+
+[sub_resource type="Sky" id="sky"]
+sky_material = SubResource("sky_mat")
+
+[sub_resource type="Environment" id="env"]
+background_mode = 2
+sky = SubResource("sky")
+ambient_light_source = 3
+tonemap_mode = 2
+ssao_enabled = true
+fog_enabled = true
+fog_density = 0.002
+fog_sky_affect = 0.3
+
+[node name="Main" type="Node3D" unique_id=1379140224]
+script = ExtResource("3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=929333595]
+environment = SubResource("env")
+
+[node name="Level" type="Node3D" parent="." unique_id=2131979014]
+script = ExtResource("4")
+
+[node name="Character" type="CharacterBody3D" parent="." unique_id=2079025308]
+physics_interpolation_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.88, 0)
+script = ExtResource("1")
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=493469022]
+physics_interpolation_mode = 1
+script = ExtResource("2")
+target_path = NodePath("../Character")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=771222845]
+
+[node name="Debug" type="Label" parent="UI" unique_id=106520501]
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 900.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4

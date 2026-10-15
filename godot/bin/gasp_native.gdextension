@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "gasp_library_init"
+compatibility_minimum = "4.5"
+reloadable = false
+
+[libraries]
+windows.debug.x86_64 = "res://bin/gasp_native.dll"
+windows.release.x86_64 = "res://bin/gasp_native.dll"

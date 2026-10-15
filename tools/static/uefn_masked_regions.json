@@ -1,0 +1,147 @@
+[
+ {
+  "param": "L Elbow",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "B"
+ },
+ {
+  "param": "L LowerArm",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "C"
+ },
+ {
+  "param": "L Wrist",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "M"
+ },
+ {
+  "param": "L Hand",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "Y"
+ },
+ {
+  "param": "R Shoulder",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "R"
+ },
+ {
+  "param": "R UpperArm",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "G"
+ },
+ {
+  "param": "R Elbow",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "B"
+ },
+ {
+  "param": "R LowerArm",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "C"
+ },
+ {
+  "param": "R Wrist",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "M"
+ },
+ {
+  "param": "R Hand",
+  "mask": "T_UEFN_Mannequin_Mask_RArm",
+  "channel": "Y"
+ },
+ {
+  "param": "L Hip",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "R"
+ },
+ {
+  "param": "L Thigh",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "G"
+ },
+ {
+  "param": "L Knee",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "B"
+ },
+ {
+  "param": "L Calf",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "C"
+ },
+ {
+  "param": "L Ankle",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "M"
+ },
+ {
+  "param": "L Foot",
+  "mask": "T_UEFN_Mannequin_Mask_LLeg",
+  "channel": "Y"
+ },
+ {
+  "param": "R Hip",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "R"
+ },
+ {
+  "param": "R Thigh",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "G"
+ },
+ {
+  "param": "R Knee",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "B"
+ },
+ {
+  "param": "R Calf",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "C"
+ },
+ {
+  "param": "Head",
+  "mask": "T_UEFN_Mannequin_Mask_Torso",
+  "channel": "R"
+ },
+ {
+  "param": "R Ankle",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "M"
+ },
+ {
+  "param": "R Foot",
+  "mask": "T_UEFN_Mannequin_Mask_RLeg",
+  "channel": "Y"
+ },
+ {
+  "param": "Neck",
+  "mask": "T_UEFN_Mannequin_Mask_Torso",
+  "channel": "G"
+ },
+ {
+  "param": "Torso",
+  "mask": "T_UEFN_Mannequin_Mask_Torso",
+  "channel": "B"
+ },
+ {
+  "param": "Waist",
+  "mask": "T_UEFN_Mannequin_Mask_Torso",
+  "channel": "C"
+ },
+ {
+  "param": "Pelvis",
+  "mask": "T_UEFN_Mannequin_Mask_Torso",
+  "channel": "M"
+ },
+ {
+  "param": "L Shoulder",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "R"
+ },
+ {
+  "param": "L UpperArm",
+  "mask": "T_UEFN_Mannequin_Mask_LArm",
+  "channel": "G"
+ }
+]

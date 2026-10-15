@@ -1,0 +1,29 @@
+# Generated from the GASP project (Epic content) by tools/ue + tools/build; regenerate, do not commit
+godot/assets/
+godot/data/
+tools/ue/out/
+
+# Build output
+godot/bin/*
+!godot/bin/gasp_native.gdextension
+native/build/
+tools/ue/GroomExport/Binaries/
+tools/ue/GroomExport/Intermediate/
+
+# Third-party checkout (godot-cpp branch 4.5, see AGENTS.md)
+native/godot-cpp/
+
+# Caches
+godot/.godot/
+__pycache__/
+*.pyc
+
+# Local editor / agent settings
+.vscode/
+.claude/settings.local.json
+
+# Local installer answers (tools/setup.py)
+tools/.setup.json
+
+# Generated build log (lists Epic asset names)
+tools/build/build_mm.log
