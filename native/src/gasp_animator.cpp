@@ -2,6 +2,7 @@
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>
 #include <godot_cpp/classes/project_settings.hpp>
+#include <godot_cpp/classes/os.hpp>
 #include <godot_cpp/classes/physics_server3d.hpp>
 #include <godot_cpp/classes/physics_direct_space_state3d.hpp>
 #include <godot_cpp/classes/physics_shape_query_parameters3d.hpp>
@@ -56,6 +57,8 @@ Quaternion GaspAnimator::godot_to_ue_quat(const Quaternion& q) { return Quaterni
 
 bool GaspAnimator::initialize(const String& data_dir) {
 	String Abs = ProjectSettings::get_singleton()->globalize_path(data_dir);
+	// exported build: res:// has no filesystem root, the data folder sits next to the executable
+	if (Abs.is_relative_path()) Abs = OS::get_singleton()->get_executable_path().get_base_dir().path_join(Abs);
 	const std::string Dir = StdS(Abs);
 	if (!AnimLibrary::Get().Load(Dir)) return false;
 	if (!MotionMatchingLibrary::Get().Load(Dir)) return false;

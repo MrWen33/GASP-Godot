@@ -27,3 +27,6 @@ tools/.setup.json
 
 # Generated build log (lists Epic asset names)
 tools/build/build_mm.log
+
+# Packaged builds (contain Epic content, never commit)
+dist/
